@@ -1,0 +1,243 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contenedor{
+	width: 100%;
+	font-family: arial;
+	
+
+	.portada{
+		background-image: url(../imagenes/portada.jpg);
+		height: 450px;
+		background-size: cover;
+		background-position: center;
+		text-align: center;
+		
+			h2{
+			color: white;
+			font-weight: 800;
+			background-color: black;
+			opacity: 0.5;
+			line-height: 450px;
+		}
+	}
+		
+	.contenido{
+		
+		width: 80%;
+		margin: auto;
+
+
+		h2{
+			margin-top:50px;
+			border-bottom: 1px solid black;
+			margin-bottom: 30px;
+			
+		}
+
+		.cajalibro{
+			border-radius: 10px;
+			display: grid;
+			grid-template-columns: 1fr;
+			text-align: center;
+			.cajalibro__box{
+				background-color: #f5f5f2;
+				margin: 20px 0px;
+
+				img{
+					width: 100%;
+				}
+
+				h3{
+					margin: 10px 0px;
+				}
+				.btn{
+					margin: 10px 0px;
+
+					a{
+
+						button{
+						cursor: pointer;
+						padding: 8px 0px;
+						width: 70%;
+						margin: auto;
+						border-radius: 20px;
+						background-color: #ecaa12;
+						color: black;
+						border: none;
+						}
+					
+					}
+				}
+				
+			}
+		}
+
+		.cajacompras{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 20px;
+			
+			
+			.cajacompras__box{
+				text-align: center;
+				background-color: #f5f5f2;
+				align-items: center;
+				margin: 10px 0px 60px 0px;
+				img{
+					
+					width: 90%;
+					height: 300px;
+				}
+
+				h3{
+					font-weight: 600;
+					font-size: 16px;
+				}
+
+				h4{
+					font-size: 12px;
+					font-weight: 300;
+					color: rgb(148, 148, 148);
+				}
+				p{
+					color: black;
+					margin: 15px 0px 5px 0px;
+					font-weight: 600;
+					font-size: 18px;
+				}
+
+				.btn-comprar{
+					margin: 10px 0px;
+					a{
+						
+					}
+					button{
+
+						width: 50%;
+						background-color: #ecaa12;
+						padding: 10px 0px;
+						border-radius: 20px;
+						border: none;
+						color: black;
+					}
+
+					button:hover{
+						background-color: rgb(212, 175, 8);
+						cursor: pointer;
+						
+					}
+				}
+			}
+		}
+		
+
+		.banner{
+			margin: 5em 0em;
+			align-items: center;
+			display: flex;			
+			flex-direction: column;
+			
+			.banner__text{
+				h3{
+
+
+				}
+
+				p{	
+					padding: 10px 0px;
+				}
+
+				.btn-ver{
+					text-align: center;
+					margin: 10px 0px;
+					button{
+						cursor: pointer;
+						padding: 8px 0px;
+						width: 70%;
+						margin: auto;
+						border-radius: 20px;
+						background-color: #ecaa12;
+						color: black;
+						border: none;
+					}
+				}
+			}
+
+			.banner__img{
+				img{
+					width: 100%;
+				}
+				
+			}
+		}
+	}	
+
+}
+
+
+
+
+
+
+
+@media(min-width: 650px){
+	.contenedor{
+	
+		.portada{
+			
+			
+				h2{
+				
+			}
+		}
+			
+		.contenido{
+			
+			width: 70%;
+			
+
+
+			.cajalibro{
+				
+				
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-gap: 20px;
+				
+				.cajalibro__box{
+					
+
+					
+
+					h3{
+
+						font-size:18px;
+
+					}
+					
+					
+					
+				}
+			}
+
+			.cajacompras{
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+			}
+
+			.banner{
+				margin: 1em 0em;
+				flex-direction: row;
+				.banner__text{
+					.btn-ver{
+						text-align: left;
+						width: 40%;
+					}
+				}
+			}
+		}	
+
+	}
+}

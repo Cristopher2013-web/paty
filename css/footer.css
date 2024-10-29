@@ -1,0 +1,65 @@
+footer {
+  width: 100%;
+  background-color: #004343; }
+  footer .contenedor-final {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0px 0px 0px; }
+    footer .contenedor-final .pie {
+      padding: 0px 0px 20px 0px;
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
+      footer .contenedor-final .pie .barra__logo a {
+        text-decoration: none; }
+        footer .contenedor-final .pie .barra__logo a h2 {
+          color: #da9b27;
+          letter-spacing: -2px; }
+      footer .contenedor-final .pie .barra__logo img {
+        margin-top: 30px; }
+      footer .contenedor-final .pie .pie__final {
+        text-align: center;
+        margin: 20px 0px; }
+        footer .contenedor-final .pie .pie__final h3 {
+          margin: 20px 0px;
+          color: #da9b27; }
+        footer .contenedor-final .pie .pie__final ul {
+          list-style: none; }
+          footer .contenedor-final .pie .pie__final ul li {
+            margin: 8px 0px; }
+            footer .contenedor-final .pie .pie__final ul li a {
+              color: #fff;
+              text-decoration: ne; }
+    footer .contenedor-final .fin {
+      padding: 5px 0px 5px 0px;
+      text-align: center;
+      font-size: 14px;
+      border-top: 1px solid #fff; }
+      footer .contenedor-final .fin h4 {
+        font-weight: 400;
+        color: white; }
+
+@media (min-width: 700px) {
+  footer .contenedor-final {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0px 0px 0px; }
+    footer .contenedor-final .pie {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr; }
+      footer .contenedor-final .pie .barra__logo a {
+        text-decoration: none; }
+        footer .contenedor-final .pie .barra__logo a h2 {
+          color: #da9b27;
+          letter-spacing: -2px; }
+      footer .contenedor-final .pie .pie__final {
+        text-align: center;
+        margin: 20px 0px; }
+        footer .contenedor-final .pie .pie__final h3 {
+          color: #da9b27; }
+        footer .contenedor-final .pie .pie__final ul {
+          list-style: none; }
+          footer .contenedor-final .pie .pie__final ul li a {
+            color: #fff;
+            text-decoration: ne; } }
+
+/*# sourceMappingURL=footer.css.map */

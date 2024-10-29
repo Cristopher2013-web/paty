@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+	.contenido{
+		width: 85%;
+		margin: auto;
+
+
+		h2{
+			margin-top:50px;
+			border-bottom: 1px solid black;
+			margin-bottom: 30px;
+			
+		}
+		.cajacompras{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 20px;
+			
+			
+			.cajacompras__box{
+				text-align: center;
+				background-color: #f5f5f2;
+				align-items: center;
+				margin: 10px 0px 60px 0px;
+				img{
+					
+					width: 80%;
+					height: 250px;
+				}
+
+				h3{
+					font-weight: 600;
+					font-size: 16px;
+				}
+
+				h4{
+					font-size: 12px;
+					font-weight: 300;
+					color: rgb(148, 148, 148);
+				}
+				p{
+					color: black;
+					margin: 15px 0px 5px 0px;
+					font-weight: 600;
+					font-size: 18px;
+				}
+
+				.btn-comprar{
+					margin: 10px 0px;
+					a{
+						
+					}
+					button{
+
+						width: 50%;
+						background-color: #ecaa12;
+						padding: 10px 0px;
+						border-radius: 20px;
+						border: none;
+						color: black;
+					}
+
+					button:hover{
+						background-color: rgb(212, 175, 8);
+						cursor: pointer;
+						
+					}
+				}
+			}
+		}
+	}
+
+
+@media(min-width: 650px){
+	.contenido{
+		.cajacompras{
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+	}
+}
